@@ -3,6 +3,7 @@ import 'package:lecture_one/widgets/BottomNav.dart';
 import 'package:lecture_one/widgets/animated_text.dart';
 import 'package:lecture_one/widgets/bottom_sheet.dart';
 import 'package:lecture_one/widgets/forms.dart';
+import 'package:lecture_one/widgets/stack.dart';
 // import 'package:lecture_one/widgets/alert.dart';
 // import 'package:lecture_one/widgets/dismissible.dart';
 // import 'package:lecture_one/widgets/drawer.dart';
@@ -23,9 +24,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(brightness: Brightness.light,
-      primaryColor: Colors.deepPurple),
-      home: const FormsWidget(),
+      theme: ThemeData(
+          brightness: Brightness.light, primaryColor: Colors.deepPurple),
+      home: const StackWidget(),
     );
   }
 }
